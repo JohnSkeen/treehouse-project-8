@@ -1,0 +1,22 @@
+/*===========================================
+   Typography
+===========================================*/
+
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+p {
+  line-height: em(32px);
+  text-align: left;
+}
+
+a {
+    font-weight: 700;
+}
+
+main h2 {
+  font-size: em(28px);
+}

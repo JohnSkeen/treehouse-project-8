@@ -1,0 +1,44 @@
+/*===========================================
+   Variables
+===========================================*/
+
+// Colors
+$black: #111;
+$white: #fff;
+$white-background: #edeff0;
+$nav-hover-color: #4b39d1;
+$nav-color: #39add1;
+
+// Logo Colors
+$logo-background: #BA8058;
+$logo-text: #EAAA7F;
+$logo-paw: #F4C6A6;
+
+// Corgi Colors
+
+$corgi-colors: (
+  'sable'     : #b97f5b,
+  'fawn'      : #e9aa82,
+  'red'       : #834b29,
+  'stone'     : #52595e,
+  'nose-eyes' : #2D3339,
+  'brows'     : #DA8058,
+  'face'      : #FBFEFF
+);
+
+// $corgi-sable: #b97f5b;
+// $corgi-fawn: #e9aa82;
+// $corgi-red: #834b29;
+// $corgi-stone: #52595e;
+// $corgi-nose-eyes: #2D3339;
+// $corgi-brows: #DA8058;
+// $corgi-face-white: #FBFEFF;
+
+// Typography
+$font-stack-primary: 'Roboto Slab', serif;
+$base-font-size: 16px;
+
+// Margin centered
+$margin-center: 0 auto;
+
+// Media Query Breakpoints

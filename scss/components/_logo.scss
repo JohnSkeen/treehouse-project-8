@@ -1,0 +1,60 @@
+/*===========================================
+   Logo
+===========================================*/
+
+header svg {
+  height: 200px;
+  padding: 50px 0 10px;
+}
+
+.st0 {
+  fill: $logo-background;
+}
+.st1 {
+  fill: $logo-text;
+}
+.st2 {
+  fill: $logo-paw;
+}
+
+.black path {
+  fill: $black;
+}
+
+.logo * {
+    transform-origin: 50% 50%;
+}
+
+.middle-toe,
+.pad,
+.right-toe,
+.left-toe {
+  animation: grow 1s ease-out backwards;
+}
+
+.left-toe {
+  animation-delay: .1s;
+}
+
+.middle-toe {
+  animation-delay: .15s;
+}
+
+.right-toe {
+  animation-delay: .2s;
+}
+
+.circle {
+  stroke: $logo-text;
+  stroke-width: 2;
+  stroke-dasharray: 316;
+  stroke-dashoffset: 316;
+
+  animation: offset .8s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.first-word .st1 {
+  // transform: translate3d(0, -180px, 0);
+  animation: word-grow .6s ease-out forwards;
+}

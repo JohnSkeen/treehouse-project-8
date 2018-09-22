@@ -1,0 +1,47 @@
+/*===========================================
+   Keyframes
+===========================================*/
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes slide {
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+  80% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes word-grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15) rotate (-5deg);
+    opacity: 1;
+    fill: $logo-background;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url(svgs/background.svg);
 }
 
 #container {
@@ -26,10 +27,6 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
-}
-
-a:hover {
-  color: #111;
 }
 
 header {
@@ -59,4 +56,109 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/*------ Navigation Styles -------*/
+
+nav {
+  float: left;
+  margin: 20px 20px;
+}
+
+nav a {
+  padding: 0 15px 0 5px;
+  transition: .5s;
+}
+
+.heart-path,
+.location-path,
+.contact-path {
+  transform-origin: 50% 50%;
+}
+
+a:hover {
+  color: #4b39d1;
+  transition: .5s;
+}
+
+a:hover path {
+  fill: #4b39d1;
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a path {
+  transition: .5s;
+}
+
+a:hover .heart {
+  transform: scale(1.6) rotate(15deg);
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a:hover .location {
+  transform: scale(1.6) rotate(360deg);
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a:hover .contact {
+  transform: scale(6) rotateY(360deg) scale(.16666667);
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.72,.2,.2,.72);
+}
+
+a .heart,
+a .location {
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+/*------ Logo Styles --------*/
+
+.st0 {
+  fill:#BA8058;
+}
+.st1 {
+  fill:#EAAA7F;
+}
+.st2 {
+  fill:#F4C6A6;
+}
+
+.black {
+  fill: black;
+}
+
+/*------ Dog Image Styles --------*/
+
+.nose_and_eyes {
+  fill: #2d3339;
+}
+
+.brows {
+  fill: #da8058;
+}
+
+.corgi-sable {
+  color: #b97f5b;
+}
+
+.corgi-fawn {
+  color: #e9aa82;
+}
+
+.corgi-red {
+  color: #834b29;
+}
+
+.corgi-stone {
+  color: #52595e;
+}
+
+.corgis {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
 }

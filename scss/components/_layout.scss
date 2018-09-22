@@ -1,0 +1,54 @@
+/*===========================================
+   Layouts
+===========================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $black;
+  background: $white-background;
+  background-image: url(../svgs/background.svg);
+}
+
+#container {
+  max-width: 960px;
+  background: $white;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+}
+
+a {
+  text-decoration: none;
+  color: $nav-color;
+}
+
+header {
+  padding-top: em(10px);
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: $logo-background;
+}
