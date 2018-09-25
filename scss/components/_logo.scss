@@ -3,8 +3,17 @@
 ===========================================*/
 
 header svg {
-  height: 200px;
-  padding: 50px 0 10px;
+  height: 140px;
+  padding: 10px 0 10px;
+  margin-bottom: 20px;
+}
+
+.logo-paw {
+  transition: .5s
+}
+
+.logo:hover .logo-paw{
+  animation: paw-hover 1s ease-in-out forwards;
 }
 
 .st0 {
@@ -54,7 +63,20 @@ header svg {
   animation-delay: 1s;
 }
 
-.first-word .st1 {
-  // transform: translate3d(0, -180px, 0);
-  animation: word-grow .6s ease-out forwards;
+.first-word,
+.second-word,
+.third-word {
+  opacity: 0;
+}
+
+@media screen and (min-width: 425px) {
+  .first-word,
+  .second-word,
+  .third-word {
+    opacity: 1;
+  }
+
+  header svg {
+    margin-bottom: 0;
+  }
 }

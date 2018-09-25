@@ -1,3 +1,66 @@
 /*===========================================
    Navigation
 ===========================================*/
+
+
+nav a {
+  display: block;
+  padding: 10px 15px 10px 5px;
+  transition: .5s;
+}
+
+.heart-path,
+.location-path,
+.contact-path {
+  transform-origin: 50% 50%;
+}
+
+a:hover {
+  color: #4b39d1;
+  transition: .5s;
+}
+
+a:hover path {
+  fill: #4b39d1;
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a path {
+  transition: .5s;
+}
+
+a:hover .heart {
+  transform: scale(1.6) rotate(15deg);
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a:hover .location {
+  transform: scale(1.6) rotate(360deg);
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+a:hover .contact {
+  transform: scale(6) rotateY(360deg) scale(.16666667);
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.72,.2,.2,.72);
+}
+
+a .heart,
+a .location {
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 425px) {
+  nav {
+    text-align: left;
+    padding: 20px 20px;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}

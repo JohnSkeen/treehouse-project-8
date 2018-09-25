@@ -4,9 +4,53 @@
 
 .corgis {
   display: flex;
-  width: 75%;
-  margin: 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 10px 10px
+}
+
+.nose_and_eyes {
+  fill: color(nose-eyes);
+}
+
+.brows {
+  fill: color(brows);
+}
+
+.sable,
+.fawn,
+.red,
+.stone {
+  display: flex;
+  flex-direction: column;
+}
+
+.corgi-sable,
+.corgi-fawn,
+.corgi-red,
+.corgi-stone {
+  width: 225px;
 }
 
 .corgi-sable {
+  color: color(sable);
+}
+
+.corgi-fawn {
+  color: color(fawn);
+}
+
+.corgi-red {
+  color: color(reddy);
+}
+
+.corgi-stone {
+  color: color(stone);
+}
+
+.span-text {
+  margin-right: 30px;
+  color: $logo-background;
 }

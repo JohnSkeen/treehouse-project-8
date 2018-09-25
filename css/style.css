@@ -304,21 +304,52 @@ template {
    Variables
 ===========================================*/
 /*===========================================
-   Mixins
-===========================================*/
-/*===========================================
    Functions
-===========================================*/
-/*===========================================
-   Config
 ===========================================*/
 /*===========================================
    Corgi
 ===========================================*/
 .corgis {
   display: flex;
-  width: 75%;
-  margin: 0 auto; }
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 10px; }
+
+.nose_and_eyes {
+  fill: #2D3339; }
+
+.brows {
+  fill: #DA8058; }
+
+.sable,
+.fawn,
+.red,
+.stone {
+  display: flex;
+  flex-direction: column; }
+
+.corgi-sable,
+.corgi-fawn,
+.corgi-red,
+.corgi-stone {
+  width: 225px; }
+
+.corgi-sable {
+  color: #b97f5b; }
+
+.corgi-fawn {
+  color: #e9aa82; }
+
+.corgi-red {
+  color: #834b29; }
+
+.corgi-stone {
+  color: #52595e; }
+
+.span-text {
+  margin-right: 30px;
+  color: #BA8058; }
 
 /*===========================================
    Keyframes
@@ -349,6 +380,15 @@ template {
     fill: #BA8058; }
   100% {
     transform: scale(1); } }
+@keyframes paw-hover {
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(0.75); }
+  80% {
+    transform: scale(1.05); } }
 /*===========================================
    Layouts
 ===========================================*/
@@ -395,12 +435,22 @@ footer {
   padding-bottom: 30px;
   color: #BA8058; }
 
+@media screen and (min-width: 425px) {
+  .paw-header {
+    display: none; } }
 /*===========================================
    Logo
 ===========================================*/
 header svg {
-  height: 200px;
-  padding: 50px 0 10px; }
+  height: 140px;
+  padding: 10px 0 10px;
+  margin-bottom: 20px; }
+
+.logo-paw {
+  transition: 0.5s; }
+
+.logo:hover .logo-paw {
+  animation: paw-hover 1s ease-in-out forwards; }
 
 .st0 {
   fill: #BA8058; }
@@ -440,12 +490,71 @@ header svg {
   animation: offset .8s ease-in-out forwards;
   animation-delay: 1s; }
 
-.first-word .st1 {
-  animation: word-grow .6s ease-out forwards; }
+.first-word,
+.second-word,
+.third-word {
+  opacity: 0; }
 
+@media screen and (min-width: 425px) {
+  .first-word,
+  .second-word,
+  .third-word {
+    opacity: 1; }
+
+  header svg {
+    margin-bottom: 0; } }
 /*===========================================
    Navigation
 ===========================================*/
+nav a {
+  display: block;
+  padding: 10px 15px 10px 5px;
+  transition: .5s; }
+
+.heart-path,
+.location-path,
+.contact-path {
+  transform-origin: 50% 50%; }
+
+a:hover {
+  color: #4b39d1;
+  transition: .5s; }
+
+a:hover path {
+  fill: #4b39d1;
+  transition: .5s;
+  transition-timing-function: ease-in; }
+
+a path {
+  transition: .5s; }
+
+a:hover .heart {
+  transform: scale(1.6) rotate(15deg);
+  transition: .5s;
+  transition-timing-function: ease-in; }
+
+a:hover .location {
+  transform: scale(1.6) rotate(360deg);
+  transition: .5s;
+  transition-timing-function: ease-in; }
+
+a:hover .contact {
+  transform: scale(6) rotateY(360deg) scale(0.16666667);
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.72, 0.2, 0.2, 0.72); }
+
+a .heart,
+a .location {
+  transition: .5s;
+  transition-timing-function: ease-in-out; }
+
+@media screen and (min-width: 425px) {
+  nav {
+    text-align: left;
+    padding: 20px 20px; }
+
+  nav a {
+    display: inline-block; } }
 /*===========================================
    Typography
 ===========================================*/
